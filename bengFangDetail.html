@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>泵房监控首页</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--<link rel="stylesheet" href="css/reset.css" />-->
+		
+		<link href="css/mui.min.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="css/mui.picker.css" />
+		<link rel="stylesheet" href="css/mui.poppicker.css" />
+		<link rel="stylesheet" href="css/pumpDetail.css" />
+		
+	</head>
+  
+ 
+	<body>
+		<div class="detailHeader">
+			<div class="detailPumpName">上海熊猫宿舍</div>
+			<a class="areaSlect mui-btn " id="showUserPicker">A1九组12312[高区] <span class="mui-icon mui-icon-arrowdown"></span></a>
+			<div class="pumpPicBox"></div>
+			<div class="adressTime clearfix">
+				<div class="adressBox">上海盈港东路6355</div>
+				<div class="timeBox">2017-12-12 12:12:12</div>
+			</div>
+			
+		</div>
+		<ul class="gongNengList mui-table-view mui-grid-view mui-grid-9">
+			    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+			    	<a href="#">                     
+			           <p class="allLiu">总流量</p>                                   
+			           <div class="mui-media-body liuNumBox"><span class="liuNum">8925.12</span>m³</div>    
+			    	</a>                                            
+			    </li>                                               
+			    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+			    	<a href="#">                     
+			           <p class="allLiu">总流量</p>                                   
+			           <div class="mui-media-body liuNumBox"><span class="liuNum">8925.12</span>m³</div>    
+			    	</a>                                            
+			    </li>                                               
+			    <li class="mui-table-view-cell mui-media mui-col-xs-4">
+			    	<a href="#">                     
+			           <p class="allLiu">总流量</p>                                   
+			           <div class="mui-media-body liuNumBox"><span class="liuNum">8925.12</span>m³</div>    
+			    	</a> 
+			    </li>
+			</ul> 
+		
+		<!--<div class="dataItemBox">
+			<ul class="dataItemList">
+				<li class="dataItemListItem">实时数据</li>
+				<li class="dataItemListItem">机组信息</li>
+				<li class="dataItemListItem">数据报表</li>
+				<li class="dataItemListItem">预警报警</li>
+				<li class="dataItemListItem">数据报表</li>
+				<li class="dataItemListItem">预警报警</li>
+			</ul>
+		</div>-->
+		<div id="slider" class="mui-slider dataItemSliderBox">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<div class="mui-scroll dataItemSlider">
+						<a class="mui-control-item mui-active" href="#item1mobile">
+							实时数据
+						</a>
+						<a class="mui-control-item" href="#item2mobile">
+							机组信息
+						</a>
+						<a class="mui-control-item" href="#item3mobile">
+							数据报表
+						</a>
+						<a class="mui-control-item" href="#item4mobile">
+							预警报警
+						</a>
+						
+					</div>
+				</div>
+				
+				<div class="dataItemSliderGroup">
+					<div class="currentDataBox">
+						<div class="caiJiSetBox clearfix">
+							<div class="caiJiSetTxt clearfix">
+								<div class="caiJiBoxImg"></div>
+								<div class="caiJiBoxTxt">各数据操作</div>
+							</div>
+							<div class="buttonBox">
+								<button class="mui-btn">采集</button>
+								<button class="mui-btn">设置</button>
+								<div class="qieHuanBtnBox">
+									<div class=" qieHuanBtn mui-switch mui-switch-blue mui-switch-mini mui-active">
+										<div class="mui-switch-handle"></div>
+									</div>
+								</div>
+										
+							</div>
+							
+						</div>
+						
+						
+						<div class="caiJiInfoBox">
+							
+							<!--控制模组-->
+							<div class="kongZhiBox active">
+								
+								<!--控制 采集时间等的模块-->
+								<ul class="kongZhiJianDing clearfix">
+									<li class="kongZhiJianDingItem">
+										<span class="kongZhiJianDingItemTxt">
+											采集间隔:
+										</span>
+										<span class="kongZhiJianDingItemNum">0.24</span>
+										<button class="kongZhiJianDingItemSet mui-pull-right">设置</button>
+									</li>
+									<li class="kongZhiJianDingItem">
+										<span class="kongZhiJianDingItemTxt">
+											采集间隔:
+										</span>
+										<span class="kongZhiJianDingItemNum">0.24</span>
+										<button class="kongZhiJianDingItemSet mui-pull-right">设置</button>
+									</li>
+									<li class="kongZhiJianDingItem">
+										<span class="kongZhiJianDingItemTxt">
+											采集间隔:
+										</span>
+										<span class="kongZhiJianDingItemNum">0.24</span>
+										<button class="kongZhiJianDingItemSet mui-pull-right">设置</button>
+									</li>
+									<li class="kongZhiJianDingItem">
+										<span class="kongZhiJianDingItemTxt">
+											采集间隔:
+										</span>
+										<span class="kongZhiJianDingItemNum">0.24</span>
+										<button class="kongZhiJianDingItemSet mui-pull-right">设置</button>
+									</li>
+								</ul>
+								
+								<!--设备状态 模块-->
+								<ul class="sheBeiStatusBox clearfix">
+									<li class="sheBeiStatusItem">
+										<img class="sheBeiStatusItemPic show" src="images/1.png" alt="" />
+										<img class="sheBeiStatusItemPic" src="images/1.png" alt="" />
+										<div class="sheBeiStatusItemTxt">排水泵</div>
+									</li>
+									<li class="sheBeiStatusItem">
+										<img class="sheBeiStatusItemPic show" src="images/1.png" alt="" />
+										<img class="sheBeiStatusItemPic" src="images/1.png" alt="" />
+										<div class="sheBeiStatusItemTxt">灯关</div>
+									</li>
+									<li class="sheBeiStatusItem">
+										<img class="sheBeiStatusItemPic show" src="images/1.png" alt="" />
+										<img class="sheBeiStatusItemPic" src="images/1.png" alt="" />
+										<div class="sheBeiStatusItemTxt">风扇温度</div>
+									</li>
+									<li class="sheBeiStatusItem">
+										<img class="sheBeiStatusItemPic show" src="images/1.png" alt="" />
+										<img class="sheBeiStatusItemPic" src="images/1.png" alt="" />
+										<div class="sheBeiStatusItemTxt">门开</div>
+									</li>
+									<li class="sheBeiStatusItem">
+										<img class="sheBeiStatusItemPic show" src="images/1.png" alt="" />
+										<img class="sheBeiStatusItemPic" src="images/1.png" alt="" />
+										<div class="sheBeiStatusItemTxt">消毒液</div>
+									</li>
+									
+								</ul>
+								<!--设备启停 模块-->
+								<ul class="sheBeiQiTing">
+									<li class="sheBeiQiTingItem">
+										<span class="sheBeiName">控制设备急起急停</span>
+										<button class="sheBeiTing mui-pull-right">停止</button>
+										<button class="sheBeiQI mui-pull-right">启动</button>
+									</li>
+									<li class="sheBeiQiTingItem">
+										<span class="sheBeiName">控制设备急起急停</span>
+										<button class="sheBeiTing mui-pull-right">停止</button>
+										<button class="sheBeiQI mui-pull-right">启动</button>
+									</li>
+									<li class="sheBeiQiTingItem">
+										<span class="sheBeiName">控制设备急起急停</span>
+										<button class="sheBeiTing mui-pull-right">停止</button>
+										<button class="sheBeiQI mui-pull-right">启动</button>
+									</li>
+									<li class="sheBeiQiTingItem">
+										<span class="sheBeiName">控制设备急起急停</span>
+										<button class="sheBeiTing mui-pull-right">停止</button>
+										<button class="sheBeiQI mui-pull-right">启动</button>
+									</li>
+									<li class="sheBeiQiTingItem">
+										<span class="sheBeiName">控制设备急起急停</span>
+										<button class="sheBeiTing mui-pull-right">停止</button>
+										<button class="sheBeiQI mui-pull-right">启动</button>
+									</li>
+									<li class="sheBeiQiTingItem">
+										<span class="sheBeiName">控制设备急起急停</span>
+										<button class="sheBeiTing mui-pull-right">停止</button>
+										<button class="sheBeiQI mui-pull-right">启动</button>
+									</li>
+									<li class="sheBeiQiTingItem">
+										<span class="sheBeiName">控制设备急起急停</span>
+										<button class="sheBeiTing mui-pull-right">停止</button>
+										<button class="sheBeiQI mui-pull-right">启动</button>
+									</li>
+								</ul>
+							</div>
+							<div class="dataBox">
+								
+								<!--压力流量模-->
+								<ul class="yaLiLiuLiang clearfix">
+									<li class="yaLiLiuLiangItem">
+										<div class="yaLiLiuLiangItemNum">0.24</div>
+										<div class="yaLiLiuLiangItemTxt">进水压力</div>
+									</li>
+									<li class="yaLiLiuLiangItem">
+										<div class="yaLiLiuLiangItemNum">0.24</div>
+										<div class="yaLiLiuLiangItemTxt">出水压力</div>
+									</li>
+									<li class="sheBeiStatusItem">
+										<div class="yaLiLiuLiangItemNum">0.24</div>
+										<div class="yaLiLiuLiangItemTxt">风扇温度</div>
+									</li>
+									<li class="yaLiLiuLiangItem">
+
+										<div class="yaLiLiuLiangItemNum">0.24</div>
+										<div class="yaLiLiuLiangItemTxt">门开</div>
+									</li>
+									<li class="yaLiLiuLiangItem">
+
+										<div class="yaLiLiuLiangItemNum"> 7</div>
+										<div class="yaLiLiuLiangItemTxt">消毒液</div>
+									</li>
+									
+								</ul>
+							
+							
+								<!--变频器模块-->
+								<div class="bianPinBox">
+									<div class="bianPinHead">
+										<div class="bianPinLine">
+											<span class="bianPinTxt">变频器</span>
+										</div>
+									</div>
+									<ul class="bianPinBody clearfix">
+										<li class="bianPinItem">
+											<div class="bianPinName">运行时间</div>
+											<div class="bianPinNumBox"><span class="bianPinNum">120 </span>s</div>
+										</li>
+										<li class="bianPinItem">
+											<div class="bianPinName">运行频率</div>
+											<div class="bianPinNumBox"><span class="bianPinNum">120 </span>s</div>
+										</li>
+										<li class="bianPinItem">
+											<div class="bianPinName">直流电压</div>
+											<div class="bianPinNumBox"><span class="bianPinNum">120 </span>s</div>
+										</li>
+										<li class="bianPinItem">
+											<div class="bianPinName">输出电压</div>
+											<div class="bianPinNumBox"><span class="bianPinNum">120 </span>s</div>
+										</li>
+										<li class="bianPinItem">
+											<div class="bianPinName">温度</div>
+											<div class="bianPinNumBox"><span class="bianPinNum">120 </span>s</div>
+										</li>
+									</ul>
+								</div>
+								
+								<!--门等模块-->
+								<div class="menDengBox">
+									<ul	 class="menDeng mui-row">
+										<li class="menDengItem mui-col-xs-2">
+											<img class="menDengItemPic1" src="images/1.png" alt="" />
+											<img class="menDengItemPic2 show" src="images/1.png" alt="" />
+											<div class="menDengTxt">门</div>
+										</li>
+										<li class="menDengItem mui-col-xs-2">
+											<img class="menDengItemPic1" src="images/1.png" alt="" />
+											<img class="menDengItemPic2 show" src="images/1.png" alt="" />
+											<div class="menDengTxt">灯</div>
+										</li>
+										<li class="menDengItem mui-col-xs-2">
+											<img class="menDengItemPic1" src="images/1.png" alt="" />
+											<img class="menDengItemPic2 show" src="images/1.png" alt="" />
+											<div class="menDengTxt">电源</div>
+										</li>
+										<li class="menDengItem mui-col-xs-2">
+											<img class="menDengItemPic1" src="images/1.png" alt="" />
+											<img class="menDengItemPic2 show" src="images/1.png" alt="" />
+											<div class="menDengTxt">破窗</div>
+										</li>
+										<li class="menDengItem mui-col-xs-2">
+											<img class="menDengItemPic1" src="images/1.png" alt="" />
+											<img class="menDengItemPic2 show" src="images/1.png" alt="" />
+											<div class="menDengTxt">USP</div>
+										</li>
+										<li class="menDengItem mui-col-xs-2">
+											<img class="menDengItemPic1" src="images/1.png" alt="" />
+											<img class="menDengItemPic2 show" src="images/1.png" alt="" />
+											<div class="menDengTxt">漏水</div>
+										</li>
+									</ul>
+								</div>
+								
+								<!--余浊模块-->
+								<div class="yuZhuoBox">
+									<ul	 class="yuZhuo mui-row">
+										<li class="yuZhuoItem mui-col-xs-2">
+											<img class="yuZhuoItemPic1" src="images/1.png" alt="" />
+											<img class="yuZhuoItemPic2 show" src="images/1.png" alt="" />
+											<div class="yuZhuoTxt">门</div>
+											<div class="yuZhuoNum">0.12</div>
+										</li>
+										<li class="yuZhuoItem mui-col-xs-2">
+											<img class="yuZhuoItemPic1" src="images/1.png" alt="" />
+											<img class="yuZhuoItemPic2 show" src="images/1.png" alt="" />
+											<div class="yuZhuoTxt">门</div>
+											<div class="yuZhuoNum">0.12</div>
+										</li>
+										<li class="yuZhuoItem mui-col-xs-2">
+											<img class="yuZhuoItemPic1" src="images/1.png" alt="" />
+											<img class="yuZhuoItemPic2 show" src="images/1.png" alt="" />
+											<div class="yuZhuoTxt">门</div>
+											<div class="yuZhuoNum">0.12</div>
+										</li>
+										<li class="yuZhuoItem mui-col-xs-2">
+											<img class="yuZhuoItemPic1" src="images/1.png" alt="" />
+											<img class="yuZhuoItemPic2 show" src="images/1.png" alt="" />
+											<div class="yuZhuoTxt">门</div>
+											<div class="yuZhuoNum">0.12</div>
+										</li>
+										<li class="yuZhuoItem mui-col-xs-2">
+											<img class="yuZhuoItemPic1" src="images/1.png" alt="" />
+											<img class="yuZhuoItemPic2 show" src="images/1.png" alt="" />
+											<div class="yuZhuoTxt">门</div>
+											<div class="yuZhuoNum">0.12</div>
+										</li>
+										<li class="yuZhuoItem mui-col-xs-2">
+											<img class="yuZhuoItemPic1" src="images/1.png" alt="" />
+											<img class="yuZhuoItemPic2 show" src="images/1.png" alt="" />
+											<div class="yuZhuoTxt">门</div>
+											<div class="yuZhuoNum">0.12</div>
+										</li>
+										
+									</ul>
+								</div>
+							</div>
+							
+							
+						</div>
+						
+					</div>
+				</div>
+			
+			</div>
+		
+		
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script type="text/javascript">
+			(function($, doc) {
+				$.init();
+				
+				mui('.mui-switch').each(function() { //循环所有toggle
+				//toggle.classList.contains('mui-active') 可识别该toggle的开关状态
+					
+					this.addEventListener('toggle', function(event) {
+						
+						if(event.detail.isActive){
+							jQuery('.kongZhiBox').addClass('active');
+							jQuery('.dataBox').removeClass('active');
+						}else {
+							jQuery('.dataBox').addClass('active');
+							jQuery('.kongZhiBox').removeClass('active');
+						}
+						
+					});
+				});
+				$.ready(function() {
+					
+					//普通示例
+					var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: 'ywj',
+						text: '九组12312洁'
+					}, {
+						value: 'aaa',
+						text: '九组12312A'
+					}, {
+						value: 'lj',
+						text: '罗九组12312'
+					}, {
+						value: 'ymt',
+						text: '九组12312w'
+					}, {
+						value: 'shq',
+						text: '史九组12312'
+					}, {
+						value: 'zhbh',
+						text: '章九组12312'
+					}, {
+						value: 'zhy',
+						text: '庄九组12312'
+					}, {
+						value: 'gyf',
+						text: '关九组12312'
+					}, {
+						value: 'zhz',
+						text: '智九组12312子'
+					}, {
+						value: 'gezh', 
+						text: '歌九组12312'
+					}]);
+					var showUserPickerButton = doc.getElementById('showUserPicker');
+				
+					showUserPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+							showUserPickerButton.innerText = JSON.stringify(items[0]);
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					//-----------------------------------------
+					
+				});
+			})(mui, document);
+			
+		</script>
+	</body>
+
+</html>
+
+

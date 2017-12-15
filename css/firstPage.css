@@ -1,0 +1,28 @@
+.gongNengList {
+  background: #fff!important;
+}
+.gongNengList > li {
+  border-color: #f2f1f1!important;
+  padding-left: 2px!important;
+  padding-right: 2px!important;
+}
+.gongNengList > li img {
+  width: 32px!important;
+}
+.gongNengList > li .mui-media-body {
+  font-size: 12px!important;
+}
+.warnTitle {
+  height: 40px;
+  color: #343434!important;
+  line-height: 40px;
+  background: #fff;
+  margin-top: 8px;
+  font-weight: normal;
+  text-indent: 16px;
+}
+.warnBox {
+  position: relative;
+  max-height: 260px;
+  overflow: auto;
+}

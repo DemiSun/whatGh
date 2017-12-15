@@ -1,0 +1,378 @@
+body {
+  background: #f2f1f1;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+.clearfix {
+  zoom: 0;
+}
+.clearfix:after {
+  content: '';
+  max-height: 1;
+  display: block;
+  clear: both;
+}
+.detailHeader {
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+  background: -webkit-linear-gradient(top, #37bafe 0%, #5788eb 100%);
+}
+.detailHeader .detailPumpName {
+  font-size: 18px;
+  color: #fff;
+}
+.detailHeader .areaSlect {
+  height: 28px;
+  border-radius: 14px;
+  margin: 10px 0;
+  background: rgba(0, 0, 0, 0.12);
+  border: none;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.detailHeader .pumpPicBox {
+  width: 294px;
+  height: 132px;
+  margin: 0 auto;
+  background: url(images/banner.png) no-repeat;
+  background-size: cover;
+}
+.detailHeader .adressTime {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: #5985ea;
+}
+.detailHeader .adressTime > div {
+  width: 50%;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  float: left;
+}
+.gongNengList {
+  margin-top: 10px!important;
+  margin-bottom: 10px!important;
+}
+.gongNengList > li.mui-table-view-cell {
+  height: 64px;
+  border-right: 1px solid  #f2f1f1!impotant;
+  background: #fff!important;
+  padding-top: 0!important;
+}
+.gongNengList > li.mui-table-view-cell > a {
+  height: 64px;
+}
+.gongNengList > li.mui-table-view-cell > a .allLiu {
+  font-size: 12px;
+  color: #d0d0d0;
+}
+.gongNengList > li.mui-table-view-cell > a .liuNumBox {
+  font-size: 12px;
+  color: #d0d0d0;
+}
+.gongNengList > li.mui-table-view-cell > a .liuNumBox .liuNum {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+.dataItemSliderBox {
+  position: absolute;
+  top: 330px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.dataItemSliderBox .dataItemSlider {
+  background: #fff;
+  border-top: 1px solid #d7d7d7;
+}
+.dataItemSliderBox .dataItemSlider > a {
+  height: 37px;
+}
+.dataItemSliderBox .dataItemSlider > a.mui-active {
+  border-bottom: 2px solid #5e8cf7!important;
+}
+.dataItemSliderBox .dataItemSliderGroup {
+  margin-top: 3px;
+  height: 84%;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+.dataItemSliderBox .dataItemSliderGroup .currentDataBox .caiJiSetBox {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  font-size: 12px;
+}
+.dataItemSliderBox .dataItemSliderGroup .currentDataBox .caiJiSetBox .caiJiSetTxt {
+  float: left;
+  width: 40%;
+}
+.dataItemSliderBox .dataItemSliderGroup .currentDataBox .caiJiSetBox .caiJiSetTxt .caiJiBoxImg {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 15px 6px;
+  background: blue;
+}
+.dataItemSliderBox .dataItemSliderGroup .currentDataBox .caiJiSetBox .caiJiSetTxt .caiJiBoxTxt {
+  float: left;
+  color: #aaaaaa;
+}
+.dataItemSliderBox .dataItemSliderGroup .currentDataBox .buttonBox {
+  float: left;
+  width: 60%;
+  height: 40px;
+  padding-top: 3px;
+  text-align: right;
+}
+.dataItemSliderBox .dataItemSliderGroup .currentDataBox .buttonBox .qieHuanBtnBox {
+  display: inline-block;
+}
+.dataItemSliderBox .dataItemSliderGroup .currentDataBox .buttonBox .qieHuanBtnBox .mui-switch-blue.mui-active {
+  background: #5e8cf7;
+  border: 2px solid #5e8cf7;
+}
+.dataItemSliderBox .dataItemSliderGroup .currentDataBox .buttonBox button {
+  width: 54px;
+  height: 30px;
+  margin-right: 6px;
+  background: #5e8cf7;
+  border-radius: 12px;
+  color: #fff;
+}
+.caiJiInfoBox {
+  width: 100%;
+  margin-top: 10px;
+}
+.caiJiInfoBox .kongZhiBox {
+  display: none;
+  width: 100%;
+}
+.caiJiInfoBox .kongZhiBox.active {
+  display: block;
+}
+.caiJiInfoBox .kongZhiBox .kongZhiJianDing {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 0;
+  background: #fff;
+}
+.caiJiInfoBox .kongZhiBox .kongZhiJianDing > li {
+  float: left;
+  width: 50%;
+  height: 30px;
+  font-size: 12px;
+  line-height: 30px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e4e4e4;
+  color: #888888;
+}
+.caiJiInfoBox .kongZhiBox .kongZhiJianDing > li:nth-child(odd) {
+  border-right: 1px solid #e4e4e4;
+}
+.caiJiInfoBox .kongZhiBox .kongZhiJianDing > li:nth-last-child(1) {
+  border-bottom: none;
+}
+.caiJiInfoBox .kongZhiBox .kongZhiJianDing > li:nth-last-child(2) {
+  border-bottom: none;
+}
+.caiJiInfoBox .kongZhiBox .kongZhiJianDing > li .kongZhiJianDingItemTxt {
+  padding-left: 6px;
+}
+.caiJiInfoBox .kongZhiBox .kongZhiJianDing > li .kongZhiJianDingItemNum {
+  color: #333333;
+}
+.caiJiInfoBox .kongZhiBox .kongZhiJianDing > li .kongZhiJianDingItemSet {
+  background: none;
+  border: none;
+  outline: none;
+  color: #5e8cf7;
+}
+.caiJiInfoBox .kongZhiBox .sheBeiStatusBox {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  margin-top: 10px;
+  padding: 12px 0;
+}
+.caiJiInfoBox .kongZhiBox .sheBeiStatusBox > li {
+  float: left;
+  box-sizing: border-box;
+  width: 20%;
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+}
+.caiJiInfoBox .kongZhiBox .sheBeiStatusBox > li img {
+  width: 25px;
+  height: 20px;
+  display: none;
+}
+.caiJiInfoBox .kongZhiBox .sheBeiStatusBox > li img.show {
+  display: inline-block;
+}
+.caiJiInfoBox .kongZhiBox .sheBeiQiTing {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px 0;
+  margin-top: 10px;
+  background: #fff;
+}
+.caiJiInfoBox .kongZhiBox .sheBeiQiTing > li {
+  box-sizing: border-box;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  color: #333333;
+  padding-left: 10px;
+}
+.caiJiInfoBox .kongZhiBox .sheBeiQiTing > li button {
+  margin-top: 4px;
+  border: none;
+  background: none;
+  outline: none;
+  color: #5e8cf7;
+}
+.caiJiInfoBox .dataBox {
+  display: none;
+  width: 100%;
+}
+.caiJiInfoBox .dataBox.active {
+  display: block;
+}
+.caiJiInfoBox .dataBox .yaLiLiuLiang {
+  width: 100%;
+  box-sizing: border-box;
+  background: #FFF;
+  border-top: 1px solid #f2f1f1;
+  border-bottom: 1px solid #f2f1f1;
+}
+.caiJiInfoBox .dataBox .yaLiLiuLiang > li {
+  float: left;
+  box-sizing: border-box;
+  width: 20%;
+  text-align: center;
+  padding: 10px 0;
+}
+.caiJiInfoBox .dataBox .yaLiLiuLiang > li .yaLiLiuLiangItemNum {
+  font-size: 20px;
+  color: #333333;
+  height: 20px;
+  line-height: 20px;
+}
+.caiJiInfoBox .dataBox .yaLiLiuLiang > li .yaLiLiuLiangItemTxt {
+  font-size: 12px;
+  color: #b0b0b0;
+  height: 20px;
+  line-height: 20px;
+}
+.caiJiInfoBox .dataBox .bianPinBox {
+  width: 100%;
+  background: #FFF;
+  margin: 10px 0;
+  padding: 10px 0;
+}
+.caiJiInfoBox .dataBox .bianPinBox .bianPinHead {
+  background: #FFF;
+  width: 100%;
+}
+.caiJiInfoBox .dataBox .bianPinBox .bianPinHead .bianPinLine {
+  position: relative;
+  height: 2px;
+  width: 50%;
+  margin: 0 auto;
+  background: #5e8cf7;
+  text-align: center;
+}
+.caiJiInfoBox .dataBox .bianPinBox .bianPinHead .bianPinLine .bianPinTxt {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 20px;
+  line-height: 20px;
+  margin-top: -10px;
+  padding: 4px 8px;
+  background: #fff;
+  color: #5e8cf7;
+}
+.caiJiInfoBox .dataBox .bianPinBox .bianPinBody {
+  width: 94%;
+  box-sizing: border-box;
+  border: 1px dashed #b8b8b8;
+  margin-left: 3%;
+  margin-top: 20px;
+  padding: 6px 0;
+}
+.caiJiInfoBox .dataBox .bianPinBox .bianPinBody > li {
+  width: 20%;
+  background: #f5f5f5;
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  color: #666666;
+}
+.caiJiInfoBox .dataBox .bianPinBox .bianPinBody > li .bianPinName {
+  border-bottom: 1px dashed #b8b8b8;
+  padding-bottom: 4px;
+}
+.caiJiInfoBox .dataBox .bianPinBox .bianPinBody > li .bianPinNumBox {
+  color: #d0d0d0;
+  padding-top: 4px;
+}
+.caiJiInfoBox .dataBox .bianPinBox .bianPinBody > li .bianPinNumBox .bianPinNum {
+  font-size: 16px;
+  color: #333333;
+}
+.caiJiInfoBox .dataBox .menDengBox {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #f2f1f1;
+  border-bottom: 1px solid #f2f1f1;
+  padding: 14px 0;
+}
+.caiJiInfoBox .dataBox .menDengBox .menDeng > li {
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+}
+.caiJiInfoBox .dataBox .menDengBox .menDeng > li img {
+  width: 28px;
+  height: 24px;
+  display: none;
+}
+.caiJiInfoBox .dataBox .menDengBox .menDeng > li img.show {
+  display: inline-block;
+}
+.caiJiInfoBox .dataBox .yuZhuoBox {
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #f2f1f1;
+  border-bottom: 1px solid #f2f1f1;
+  padding: 14px 0;
+}
+.caiJiInfoBox .dataBox .yuZhuoBox .yuZhuo > li {
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+}
+.caiJiInfoBox .dataBox .yuZhuoBox .yuZhuo > li img {
+  width: 28px;
+  height: 24px;
+  display: none;
+}
+.caiJiInfoBox .dataBox .yuZhuoBox .yuZhuo > li img.show {
+  display: inline-block;
+}
+.caiJiInfoBox .dataBox .yuZhuoBox .yuZhuo > li .yuZhuoNum {
+  font-size: 18px;
+  color: #b0b0b0;
+}

@@ -1,0 +1,163 @@
+{
+	"login.html": {
+		"resources": [
+			"js/jquery-2.1.0.js",
+			"css/mui.css",
+			"JS_ext/BDPushPlugin.js",
+			"img/user.png",
+			"img/password.png",
+			"js/mui.min.js",
+			"css/loginMain.css",
+			"fnAction/md5-min.js",
+			"img/logo.png",
+			"js/flexible.js",
+			"img/bg.png",
+			"css/reset.css",
+			"fnAction/FunctionAction.js",
+			"img/wechat.png",
+			"js/tweenMax.min.js"
+		],
+		"refer": [
+			"firstPage.html"
+		]
+	},
+	"me.html": {
+		"resources": [
+			"css/me.css",
+			"images/meHeaderBg.png",
+			"js/mui.view.js",
+			"images/logo.png"
+		],
+		"refer": [
+			"map.html",
+			"firstPage.html"
+		]
+	},
+	"firstPage.html": {
+		"resources": [
+			"images/cbd.jpg",
+			"images/muwu.jpg",
+			"fonts/mui.ttf",
+			"images/shuijiao.jpg",
+			"css/firstPage.css",
+			"images/banner.png",
+			"css/icons-extra.css",
+			"images/5.png",
+			"fonts/mui-icons-extra.ttf",
+			"images/2.png",
+			"images/1.png",
+			"images/3.png",
+			"css/mui.min.css",
+			"images/6.png",
+			"images/7.png",
+			"js/jquery-2.1.0.js",
+			"JS_ext/BDPushPlugin.js",
+			"js/mui.min.js",
+			"fnAction/md5-min.js",
+			"fnAction/FunctionAction.js"
+		],
+		"refer": [
+			"me.html",
+			"yuanCheng.html",
+			"map.html"
+		]
+	},
+	"map.html": {
+		"resources": [
+			"js/bMapInit.js",
+			"fonts/mui-icons-extra.ttf",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"fnAction/md5-min.js",
+			"css/mui.min.css",
+			"js/jquery-2.1.0.js",
+			"JS_ext/BDPushPlugin.js",
+			"css/icons-extra.css",
+			"fnAction/FunctionAction.js"
+		],
+		"refer": [
+			"me.html",
+			"firstPage.html"
+		]
+	},
+	"yuanCheng.html": {
+		"resources": [
+			"images/sz.png",
+			"images/yuanXun.png",
+			"images/shuijiao.jpg",
+			"js/jquery-2.1.0.js",
+			"images/yl.png",
+			"images/yuanJue.png",
+			"css/yuanCheng.css",
+			"images/b2.png",
+			"js/mui.min.js",
+			"images/z1.png",
+			"images/yuanChengHeaderBg.png",
+			"images/sy.png",
+			"images/yuanWarn.png",
+			"fonts/mui.ttf",
+			"images/yuanWei.png",
+			"images/h6.png",
+			"JS_ext/BDPushPlugin.js",
+			"images/fm.png",
+			"images/sv.png",
+			"js/echarts.min.js",
+			"images/zz5.png",
+			"images/db.png",
+			"fnAction/md5-min.js",
+			"css/mui.min.css",
+			"images/ll.png",
+			"images/tf.png",
+			"images/bz.png",
+			"fnAction/FunctionAction.js"
+		],
+		"refer": [
+			"bengFangPage.html"
+		]
+	},
+	"bengFangPage.html": {
+		"resources": [
+			"images/1.png",
+			"css/bengFangPage.css",
+			"css/reset.css",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"fnAction/md5-min.js",
+			"css/mui.min.css",
+			"js/jquery-2.1.0.js",
+			"JS_ext/BDPushPlugin.js",
+			"fnAction/FunctionAction.js",
+			"sheBeiPage.html",
+			"sheBei_sub.html"
+		],
+		"refer": [
+			"bengFangDetail.html",
+			"sheBeiPage.html",
+			"sheBei_sub.html"
+		]
+	},
+	"bengFangDetail.html": {
+		"resources": [
+			"js/mui.picker.js",
+			"css/pumpDetail.css",
+			"js/mui.poppicker.js",
+			"css/mui.poppicker.css",
+			"css/mui.picker.css"
+		]
+	},
+	"sheBeiPage.html": {
+		"resources": [
+			"css/sheBeiPage.css",
+			"bengFangPage.html",
+			"images/cbd.jpg",
+			"images/1.png",
+			"js/mui.min.js",
+			"fonts/mui.ttf",
+			"css/mui.min.css",
+			"css/reset.css"
+		],
+		"refer": [
+			"bengFangPage.html"
+		]
+	}
+}
